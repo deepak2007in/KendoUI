@@ -12,7 +12,12 @@
         <p><a href="index.html">Home</a></p>
         <script type="text/javascript">
             $(document).ready(function () {
-                $("#myGrid").kendoGrid();
+                $("#myGrid").kendoGrid({
+                    sortable: {
+                        mode: "multiple",
+                        allowUnsort: true
+                    }
+                });
             });
         </script>
         <table id="myGrid">
